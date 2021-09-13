@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGHC.PL | Menu Główne</title>
+    <link rel="stylesheet" href="../css/solid.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="photo"></div>
+    <header>
+    <div class="logo"><span class="white">OG </span> HC</div>
+    <p class="scroll"></p>
+    <nav>
+        <ul>
+            <li><a href="../index.html" class="menu active">MENU GŁÓWNE</a></li>
+            <li><a href="#main" class="menu1">SKLEP</a></li>
+            <li><a href="#price" class="menu2">REGULAMIN</a></li>
+            <li><a href="#" class="menu4">KONTAKTT</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+
+
+    <div class="wrapper">
+        <div class="main">
+            <i class="fas fa-arrow-circle-left fa-2x" id="arrow"></i>
+            <div class="img">
+                <h3>Zakup Vipa</h3>
+            </div>
+            <div class="information">
+                <form action="" method="POST">
+                    <div class="container">
+                        <p class="dane">Wpisz swój nick:</p> <br><input type="text" id="nicknames" name="nickname">
+
+                        <p class="methoda">Wybierz metodę płatności: </p>
+                        <hr>  
+                        <div class="metody">
+                            <input type="radio" name="method" id="Psc" onclick="checkeds()"> <label for="Psc">PaySafeCard</label><br>
+                            <input type="radio" name="method" id="PP" onclick="checkeds()"> <label for="PP">PayPal</label><br>
+                            <input type="radio" name="method" id="card" onclick="checkeds()"> <label for="card">Przelew</label><br>
+                            <input type="radio" name="method" id="sms" onclick="checkeds()"> <label for="sms">SMS+</label><br>
+                        </div>
+                    </div>
+
+                        <p class="podsumowanie">Podsumowanie</p>
+                        <hr>
+                        <p>Nick :<span id="name"></span></p>
+                        <p>Czas Trwania :<span class="name right">30 dni</span></p>
+                        <p>Cena :<span id="price"></span></p><br>
+
+                        <input type="checkbox" name="" id="regulamin"> <span id="accept">Akceptuję regulamin, jednocześnie potwierdzam poprawność podanego nicku, oraz cenę usługi.</span><br>
+                        <input type="submit" value="ZAPŁAĆ!">
+                </form>
+            </div>
+        </div>
+        <div class="ranga">
+            <img src="../images/vip.png" alt="" srcset="">
+            <h2>Ranga vip posiada:</h2> <br>
+            <ul>
+                <li>Zestaw Vip pod komendą /kit Vip</li>
+                <li>rezerwacje slota</li>
+                <li>dostęp do /ec</li>
+                <li>Prefix przed nickiem</li>
+                <li>Dostęp do kolorów</li>
+                <li>Dostęp do 2 sethome</li>
+                <li>Limit działek zwiększony do 6</li>
+                <li>Dostęp do komendy /ah</li>
+                <li>Dostęp do zmiany nazw itemów pod komendą /item</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('nav').toggleClass('active');
+            $('header').toggleClass('act');
+            $('body').toggleClass('stop-scrolling');
+        })
+    })
+    </script>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

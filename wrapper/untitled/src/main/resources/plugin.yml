@@ -1,0 +1,4 @@
+name: Dada
+version: ${project.version}
+main: ada.dada.Dada
+api-version: 1.17

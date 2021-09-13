@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OGHC.PL | Menu Główne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="photo"></div>
+    <header>
+    <div class="logo"><span class="white">OG </span> HC</div>
+    <p class="scroll"></p>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu active">MENU GŁÓWNE</a></li>
+            <li><a href="#main" class="menu1">SKLEP</a></li>
+            <li><a href="#price" class="menu2">REGULAMIN</a></li>
+            <li><a href="#" class="menu4">KONTAKTT</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+        <div class="logos">
+            <img src="./images/logo.png" alt=""> <br>
+            <input type="button" value="OGHC.PL"><br>
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
+        
+        <h1 id="shop">Sklep</h1>
+        <div class="shop">
+            <div class="zakup"><h2>VIP</h2> <br> <p>na 30 dni</p> <img src="./images/vip.png" alt=""> <input type="button" value="ZAKUP VIP" onclick="newPage(0)"></div>
+            <div class="zakup"><h2>SVIP</h2> <br> <p>na 30 dni</p><img src="./images/svip.png" alt=""> <input type="button" value="ZAKUP SVIP"></div>
+            <div class="zakup"><h2>MVP</h2> <br> <p>na 30 dni</p><img src="./images/mvp.png" alt=""> <input type="button" value="ZAKUP MVP"></div>
+            <div class="zakup"><h2>KLUL</h2> <br> <p>na 30 dni</p><input type="button" value="ZAKUP KLUL"></div>
+            <div class="zakup"><h2>KLUCZE</h2> <img src="./images/key.png" alt="" class="essa"> <input type="button" value="ZAKUP KLUCZE" id="es"></div>
+            <div class="zakup"><h2>TOKENY</h2> <img src="./images/coins.png" alt="" class="essa"> <input type="button" value="ZAKUP TOKENY" id="es"></div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active');
+                $('header').toggleClass('act');
+                $('body').toggleClass('stop-scrolling');
+            })
+        })
+        </script>
+
+    <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

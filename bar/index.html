@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span class="white">Salk</span>MC</a>
+        <div class="menu"></div>
+        <nav>
+            <ul>
+                <li><a href="" class="active">STRONA GŁÓWNA</a></li>
+                <li><a href="">SKLEP</a></li>
+                <li><a href="">POMOC</a></li>
+                <li><a href="">REGULAMIN</a></li>
+                <li><a href="">PLAN EDYCJI</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+    </header>
+
+    <div class="icon">
+        <img src="icon.png" class = "icon-img">
+    
+    </div>
+    <div class="clearfix"></div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu').click(function() {
+                $('.menu').toggleClass('active')
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>   
+</body>
+</html>

@@ -1,0 +1,13 @@
+name: Main
+version: 1.0
+main: me.challangersoncore.main.Main
+api-version: 1.16
+authors: [ Challangerson ]
+
+commands:
+  tpa:
+  msg:
+  r:
+  tpaccept:
+  tpdeny:
+  efekty:

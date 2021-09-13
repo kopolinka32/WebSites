@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "webfonts",
+			"path": "..\\..\\fontawesome-free-5.15.3-web\\webfonts"
+		},
+		{
+			"name": "OGHC.pl",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "OGHC.pl"
+	}
+}
